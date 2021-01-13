@@ -1,0 +1,36 @@
+{
+  "name": "book-app",
+  "version": "1.0.0",
+  "description": "storybook",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js --exec babel-node --presets @babel/env",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Ajdin Kmetas",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^3.6.0",
+    "config": "^3.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.5.0",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.1.6",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "nodemon": "^1.17.5"
+  }
+}
